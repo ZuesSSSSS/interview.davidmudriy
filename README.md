@@ -1,3 +1,7 @@
+[interview.davidmudriy.com](https://www.interview.davidmudriy.com)
+
+![Figma UI Design](/figma-design.png.png)
+
 # Astro Starter Kit: Minimal
 
 ```
