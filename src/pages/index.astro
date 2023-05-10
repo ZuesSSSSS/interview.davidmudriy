@@ -1,4 +1,7 @@
 ---
+import ProjectLayout from  '../components/ProjectLayout.astro';
+import '/public/styles.css';
+
 ---
 
 <html lang="en">
@@ -7,9 +10,35 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel='stylesheet' href="/public/styles.css" />
+		<title>David Mudriy | Interview</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header class='top-left'>
+			<h1 class="logo">David Mudriy</h1>
+			<h3 class='sub-logo'>Interview | <a class='title'>Projects</a></h3>
+		</header>
+		<section>
+			<ProjectLayout 
+				title="RSG" 
+				subtitleLink="https://www.services.davidmudriy.com/rustscan"
+				tags="RustScan, CyberSecurity, GoLang, Port scanning"
+				description="Rustscan is a Port Scanner. It’s a quicker version of nmap. Port Scanning is used for security assessments and networking." />
+			<ProjectLayout 
+				title="ZNO" 
+				subtitleLink="https://www.zinzo.dev" 
+				tags="AstroJS, CSS/HTML/JS, Brand Design, Web Design"
+				description="Zinzo is a personal Design to Creation-to-Web Demo process test. A simple quick and easy project." />
+			<ProjectLayout 
+				title="GOR" 
+				subtitleLink="https://github.com/ZuesSSSSS/Receipt-Scanner" 
+				tags="CSS/HTML/JS, OCR (Optical Character Recognition), Prototype"
+				description="Receipt Scanner was built for a work prototype. OCR work prototype for Gas Station receipts to record transactions." />
+			<ProjectLayout 
+				title="FBA" 
+				subtitleLink="https://github.com/ZuesSSSSS/MyFirebaseAuth" 
+				tags="React, Firebase, CSS/HTML/JS, Prototype/Template"
+				description="MyFireBaseAuth was built to template a React and Firebase Auth implementation." />
+		</section>
 	</body>
 </html>

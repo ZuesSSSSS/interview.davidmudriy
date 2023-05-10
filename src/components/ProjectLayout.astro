@@ -1,0 +1,13 @@
+---
+import "/public/styles.css";
+const { title, 
+        subtitleLink,
+        tags, 
+        description } = Astro.props;
+---
+
+<section class="sub-title">
+  <h2><a href={subtitleLink}>{title}</a></h2>
+  <p>{description}</p>
+  <span>{tags}</span>
+</section>
